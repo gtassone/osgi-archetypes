@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor
+	xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd"
+	name="archetype-usac-osgi-service"
+	xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<requiredProperties>
+		<requiredProperty key="bundleName">
+			<defaultValue />
+		</requiredProperty>
+		<requiredProperty key="parentArtifactId">
+			<defaultValue />
+		</requiredProperty>
+		<requiredProperty key="parentGroupId">
+			<defaultValue />
+		</requiredProperty>
+		<requiredProperty key="parentVersion">
+			<defaultValue />
+		</requiredProperty>
+		<requiredProperty key="ServiceInterfaceName">
+			<defaultValue>MyService</defaultValue>
+		</requiredProperty>
+		<requiredProperty key="ServiceInterfacePackage">
+			<defaultValue/>
+		</requiredProperty>
+		<requiredProperty key="serviceGroupId">
+			<defaultValue/>
+		</requiredProperty>
+		<requiredProperty key="serviceArtifactId">
+			<defaultValue/>
+		</requiredProperty>
+		<requiredProperty key="serviceVersion">
+			<defaultValue/>
+		</requiredProperty>
+		<requiredProperty key="ServiceImplClassName">
+			<defaultValue>MyServiceImpl</defaultValue>
+		</requiredProperty>
+		<requiredProperty key="ActivatorClassName">
+			<defaultValue>Activator</defaultValue>
+		</requiredProperty>
+	</requiredProperties>
+	<fileSets>
+		<fileSet filtered="true" packaged="true" encoding="UTF-8">
+			<directory>src/main/java</directory>
+			<includes>
+				<include>**/*.java</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true" packaged="false" encoding="UTF-8">
+			<directory></directory>
+			<includes>
+				<include>**/*.bnd</include>
+			</includes>
+		</fileSet>
+	</fileSets>
+</archetype-descriptor>

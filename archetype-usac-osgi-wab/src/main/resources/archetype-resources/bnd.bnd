@@ -1,0 +1,14 @@
+-wab:                 src/main/webapp
+-wablib:              
+-sourcepath:          src/main/java
+target-dir:           target/bnd
+bin:                  target/classes
+src:                  src/main/java
+Bundle-Name: ${bundleName}
+Bundle-SymbolicName: ${bundleName}
+Bundle-ClassPath: WEB-INF/classes
+Web-ContextPath: /${webContextPath}
+Bundle-Activator: ${package}.${ActivatorClassName}
+Private-Package: ${package}
+Import-Package: javax.servlet;version="[2.5, 3.0)", \
+                javax.servlet.http;version="2.5",*

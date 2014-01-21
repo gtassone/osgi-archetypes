@@ -1,0 +1,10 @@
+-sourcepath:          src/main/java
+target-dir:           target/bnd
+bin:                  target/classes
+src:                  src/main/java
+Bundle-Name: ${bundleName}
+Bundle-SymbolicName: ${bundleName}
+Bundle-Activator: ${package}.${ActivatorClassName}
+Private-Package: ${package}
+Export-Package: ${ServiceInterfacePackage};
+Import-Package: ${ServiceInterfacePackage};*;
