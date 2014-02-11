@@ -8,15 +8,6 @@
 		<requiredProperty key="bundleName">
 			<defaultValue />
 		</requiredProperty>
-		<requiredProperty key="parentArtifactId">
-			<defaultValue />
-		</requiredProperty>
-		<requiredProperty key="parentGroupId">
-			<defaultValue />
-		</requiredProperty>
-		<requiredProperty key="parentVersion">
-			<defaultValue />
-		</requiredProperty>
 		<requiredProperty key="ServletClassName">
 			<defaultValue>MyServlet</defaultValue>
 		</requiredProperty>
