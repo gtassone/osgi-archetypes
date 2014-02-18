@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    
+    <display-name>${projectName} Web Application</display-name>
+
+    <listener>
+        <listener-class>${package}.LogInitContextListener</listener-class>
+    </listener>
+    
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>${servletName}</servlet-name>
+		<servlet-class>${package}.${ServletClassName}</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>${servletName}</servlet-name>
+		<url-pattern>/${servletUrlPattern}</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
